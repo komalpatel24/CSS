@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/74a4c610c1.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .main{
+            background-image: url("../emoji/card7.webp");
+            /* background-image: url("../emoji/card8.jpg"); */
+            background-repeat: no-repeat;
+            height: 100vh;
+            width: 100vw;
+            background-size: cover;
+             background-attachment: fixed;
+             position: relative;
+            font-family: arial;
+
+              }
+        .card1{
+            background-color: rgb(26, 26, 26,0.8);
+            /* border: 1px solid black; */
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19),0 6px 20px 0 rgba(0, 0, 0, 0.70);
+            border-radius: 4%;
+            height: 85%;
+            width: 26%;
+            position: absolute;
+            align-items: center;
+            left: 17%;
+            top: 6.5%;
+        }
+        .card1:hover {
+                box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.52);
+                height: 88%;
+                width: 29%;
+                }
+        .content{
+            color: white;
+        }
+         .i1{
+           float: left;
+           margin-left:4%;
+           margin-top: 6%;
+        }
+        .i2 {
+            float: right;
+            margin-top: 6%;
+            margin-right: 6%;
+        }
+        .i2:hover{
+           color: red;
+        }
+        .i3{
+            float: right;
+            margin-top: 6%;
+            margin-right: 6%;
+        }
+         img{
+            border-radius: 90%;
+            height: 16vh;
+            width: 28%;
+            margin-top: 15%;
+            margin-left: 27%;
+        }
+        .title{
+            margin-left: 25%;
+            margin-top: 4%;
+        }
+        .job-title{
+            color: gray;
+            margin-left: 24%;
+            margin-top: 1%;
+            font-size: 86%;
+        }
+        .info{
+            font-size: 90%;
+            margin-left: 26%;
+            margin-top: 2%;
+        }
+        hr{
+            width:80%;
+            margin-left:9%;
+            margin-top: 8%;
+        }
+         button{
+            border-radius: 19px;
+            height: 6vh;
+            width: 31%;
+            background-image: linear-gradient(to bottom right,blue,lightblue,rgb(223, 48, 106));
+            margin-left: 34%;
+            margin-top: 6%;
+        }
+        .btn:hover{
+            border:solid 3px #911c6c;
+            height:40px;
+            color: blue;
+            background:#ffffff;
+            width:35%;
+            border-color: linear-gradient(to bottom right,blue,lightblue,rgb(223, 48, 106));
+            border-radius:30px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.16);
+            }
+      
+        .circle{
+            display: flex;
+        }
+        .c1{
+            border-radius: 90%;
+            background-image: linear-gradient(to bottom right,rgb(153, 8, 88),rgb(247, 86, 140),rgb(153, 8, 88));
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(61, 60, 60, 0.19);
+            height: 9vh;
+            width: 17%;
+            margin-left: 11%;
+            margin-top: 7%;
+        }
+        .c1 i{
+            margin-left: 23%;
+            margin-top: 21%;
+         }
+         .c2 i{
+            margin-top: 20%;
+            margin-left: 21%;
+         }
+         .c3 i{
+            margin-top: 23%;
+            margin-left: 26%;
+         }
+        .c2{
+            border-radius: 90%;
+            background-image: linear-gradient(to bottom right,rgb(119, 119, 245),lightblue);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(61, 60, 60, 0.19);
+            height: 9vh;
+            width: 17%;
+            margin-left: 14%;
+            margin-top: 7%;
+        }
+        .c3{
+            border-radius: 90%;
+            background-image: linear-gradient(to bottom right,blue,lightblue);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(61, 60, 60, 0.19);
+            height: 9vh;
+            width: 17%;
+            margin-left: 13%;
+            margin-top: 7%;
+        }
+        .titlee{
+            color:#ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 53%;
+        }
+       
+        .card2{
+            background-color: white;
+            /* border: 1px solid black; */
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19),0 6px 20px 0 rgba(0, 0, 0, 0.70);
+            border-radius: 4%;
+            height: 85%;
+            width: 26%;
+            position: absolute;
+            align-items: center;
+            left: 53%;
+            top: 6.5%;
+        }
+          .i12{
+           float: left;
+           margin-left:4%;
+           margin-top: 6%;
+        }
+        .i22 {
+            float: right;
+            margin-top: 6%;
+            margin-right: 6%;
+        }
+        .i32{
+            float: right;
+            margin-top: 6%;
+            margin-right: 6%;
+        }
+        .card2:hover {
+                box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.52);
+                height: 88%;
+                width: 29%;
+                }
+                .content2{
+                    color: rgb(24, 22, 22);
+                }
+                .titlee1{
+            color:rgb(24, 22, 22);
+            font-family: roboto;
+            margin-top: 58%;
+        }
+        
+    </style>
+</head>
+<body>
+ <div class="container">
+    <div class="main">
+
+        <div class="card1">
+            <div class="content">
+                    <div class="i1">
+                        <i class="fa-solid fa-arrow-left-long"></i>
+                    </div>
+                    <div class="i3">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                    <div class="i2">
+                         <i class="fa-regular fa-heart"></i>
+                    </div> 
+                    
+                    <img src="../emoji/bg3.jpg" alt="bg">
+                    <h1 class="title">Bevely Little</h1>
+                    <p class="job-title"> SENIOR PRODUCT DESIGNER</p>
+                    <div class=" info">
+                        <p>Create usable interface and <br> &nbsp; &nbsp;designs @GraphicSpark</p>
+                    </div>
+                    <button class="btn"> Hire me</button>
+                     <hr>
+                  <div class="circle">
+                        <div class="c1">
+                            <i class="fab fa-dribbble fa-2x"></i>
+                            <h2 class="titlee">12.8k</h2>
+                            <p class="followers">Followers</p>
+                        </div>
+                        <div class="c2">
+                            <i class="fab fa-behance fa-2x"></i>
+                            <h2 class="titlee">12.8k</h2>
+                            <p class="followers">Followers</p>
+                        </div>
+                        <div class="c3">
+                            <i class="fab fa-github-alt fa-2x"></i>
+                            <h2 class="titlee">12.8k</h2>
+                             <p class="followers">Followers</p>
+                        </div>
+                 </div>
+          </div>
+       </div>
+        <div class="card2">
+            <div class="content2">
+                <div class="i12" >
+                    <i class="fa-solid fa-arrow-left-long"></i>
+                </div>
+                <div class="i32">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+                <div class="i22">
+                     <i class="fa-regular fa-heart"></i>
+                </div> 
+                
+                <img src="../emoji/bg3.jpg" alt="bg">
+                <h1 class="title">Bevely Little</h1>
+                <p class="job-title"> SENIOR PRODUCT DESIGNER</p>
+                <div class=" info">
+                    <p>Create usable interface and <br> &nbsp; &nbsp;designs @GraphicSpark</p>
+                </div>
+                <button class="btn"> Hire me</button>
+                 <hr style="width:80%;margin-left:9%; margin-top: 8%;">
+                 <div class="circle">
+                    <div class="c1">
+                        <i class="fab fa-dribbble fa-2x"></i>
+                        <h2 class="titlee1">12.8k</h2>
+                        <p class="followers">Followers</p>
+                    </div>
+                    <div class="c2">
+                        <i class="fab fa-behance fa-2x"></i>
+                        <h2 class="titlee1">12.8k</h2>
+                        <p class="followers">Followers</p>
+                    </div>
+                    <div class="c3">
+                        <i class="fab fa-github-alt fa-2x"></i>
+                        <h2 class="titlee1">12.8k</h2>
+                         <p class="followers">Followers</p>
+                    </div>
+                </div>
+           </div>
+       </div>
+
+
+ </div>
+</div>
+</body>
+</html>
