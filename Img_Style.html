@@ -4,45 +4,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/74a4c610c1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     <title>Image_Style</title>
     <style>
        .gallery{
+        /* display: block; */
         border: 1px solid rgba(0, 0, 0, 0.2);
         width: 92%;
+        position: relative;
         text-align: center;
-
        }
+      
         .gallery:hover {
           border: 1px solid rgba(0, 0, 0, 0.2);
-
         }
-        
-        .gallery img:hover {
-          padding: 0.2px;
-          /* background-color: rgba(119, 119, 245); */
+        .responsive:hover img {
+          background-color: rgba(119, 119, 245);
+          /* padding: 0.1px;
+              width: 100%;
+              height: 50%; */
             }
-        
         .gallery img {
-          width: 100%;
-          height: 50%;
-          padding: 4%;
-        }
-        
-        .desc {
+          position: relative;
+            width: 100%;
+            height: 40%;
+            /* padding: 4%; */
+          }
+           .desc {
           /* padding: 2.5px; */
-          text-align: center;
+            text-align: center;
         }
         .desc h3,p{
             position: sticky;
         }
+
+       .gallery .money{
+          position: absolute;
+          bottom: 83%;
+          left: 78%;
+          opacity: 0%;
+        }
+        .i1{
+          background-color:black;
+          width: 22%;
+          height: 8.5vh;
+          border-radius: 90%;
+          position: absolute;
+          bottom: 45%;
+          left: 40%;
+          opacity: 0%;
+            }
+            .i1 i{
+              position: absolute;
+              top: 33%;
+              right: 37%;
+              color: white;
+            }
+          .responsive:hover .money{
+            opacity: 100%;
+            animation: backInDown;
+            animation-duration: 0.4s; 
+          }
+          .responsive:hover .i1{
+            opacity: 100%;
+            -webkit-transition: all 0.5s ease-in;
+                  transition: all 0.5s ease-in;
+          }
+          .i1:hover i{
+            color: black;
+          }
+          .i1:hover{
+            background-color: yellow;
+          }
         * {
           box-sizing: border-box;
+          /* font-family: Arial, Helvetica, sans-serif; */
         }
         
         .responsive {
           padding: 17px 10px;
           float: left;
           width: 24.99999%;
+          
         }
         
         @media only screen and (max-width: 700px) {
@@ -51,13 +96,11 @@
             margin: 6px 0;
           }
         }
-        
-        @media only screen and (max-width: 500px) {
+         @media only screen and (max-width: 500px) {
           .responsive {
             width: 100%;
           }
         }
-        
         .clearfix:after {
           content: "";
           display: table;
@@ -66,16 +109,22 @@
         </style>
   </head>
  <body>
-        
+        <div class="c1">
         <div class="responsive">
           <div class="gallery">
             <a target="_blank" href="../emoji/C.W350.H300/cc1.jpg">
               <img src="../emoji/C.W350.H300/cc1.jpg" alt="Chair_Design_1" width="600" height="400">
             </a>
-            <div class="desc">
-                <h3>WOODEN CHAIR</h3>
-               <p> Add a description of the image here</p>
+             <div class="money">
+              <h2><b>$399</b></h2>
             </div>
+            <div class="i1">
+              <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+            <div class="desc">
+              <h3>WOODEN CHAIR</h3>
+             <p> Add a description of the image here</p>
+          </div>
           </div>
         </div>
         
@@ -85,10 +134,16 @@
             <a target="_blank" href="../emoji/C.W350.H300/cc2.jpg">
               <img src="../emoji/C.W350.H300/cc2.jpg" alt="Chair_Design_2" width="600" height="400">
             </a>
-            <div class="desc">
-                <h3>WOODEN CHAIR</h3>
-               <p> Add a description of the image here</p>
+            <div class="money">
+              <h2><b>$399</b></h2>
             </div>
+            <div class="i1">
+              <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+            <div class="desc">
+              <h3>WOODEN CHAIR</h3>
+             <p> Add a description of the image here</p>
+          </div>
           </div>
         </div>
         
@@ -97,10 +152,16 @@
             <a target="_blank" href="../emoji/C.W350.H300/cc3.jpg">
               <img src="../emoji/C.W350.H300/cc3.jpg" alt="Chair_Design_3" width="600" height="400">
             </a>
-            <div class="desc">
-                <h3>WOODEN CHAIR</h3>
-               <p> Add a description of the image here</p>
+            <div class="money">
+              <h2><b>$399</b></h2>
             </div>
+            <div class="i1">
+              <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+            <div class="desc">
+              <h3>WOODEN CHAIR</h3>
+             <p> Add a description of the image here</p>
+          </div>
           </div>
         </div>
         
@@ -109,10 +170,16 @@
             <a target="_blank" href="../emoji/C.W350.H300/cc4.jpg">
               <img src="../emoji/C.W350.H300/cc4.jpg" alt="Chair_Design_4" width="600" height="400">
             </a>
-            <div class="desc">
-                <h3>WOODEN CHAIR</h3>
-               <p> Add a description of the image here</p>
+            <div class="money">
+              <h2><b>$399</b></h2>
             </div>
+            <div class="i1">
+              <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+            <div class="desc">
+              <h3>WOODEN CHAIR</h3>
+             <p> Add a description of the image here</p>
+          </div>
           </div>
         </div>
         
@@ -122,6 +189,12 @@
             <a target="_blank" href="../emoji/C.W350.H300/cc5.jpg">
               <img src="../emoji/C.W350.H300/cc5.jpg" alt="Chair_Design_3" width="600" height="400">
             </a>
+            <div class="money">
+              <h2><b>$399</b></h2>
+            </div>
+            <div class="i1">
+              <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
             <div class="desc">
                 <h3>WOODEN CHAIR</h3>
                <p> Add a description of the image here</p>
@@ -134,6 +207,12 @@
             <a target="_blank" href="../emoji/C.W350.H300/cc6.jpg">
               <img src="../emoji/C.W350.H300/cc6.jpg" alt="Chair_Design_3" width="600" height="400">
             </a>
+            <div class="money">
+              <h2><b>$399</b></h2>
+            </div>
+            <div class="i1">
+              <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
             <div class="desc">
                 <h3>WOODEN CHAIR</h3>
                <p> Add a description of the image here</p>
@@ -146,6 +225,12 @@
             <a target="_blank" href="../emoji/C.W350.H300/cc7.jpg">
               <img src="../emoji/C.W350.H300/cc7.jpg" alt="Chair_Design_3" width="600" height="400">
             </a>
+            <div class="money">
+              <h2><b>$399</b></h2>
+            </div>
+            <div class="i1">
+              <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
             <div class="desc">
                 <h3>WOODEN CHAIR</h3>
                <p> Add a description of the image here</p>
@@ -158,6 +243,12 @@
             <a target="_blank" href="../emoji/C.W350.H300/cc8.jpg">
               <img src="../emoji/C.W350.H300/cc8.jpg" alt="Chair_Design_3" width="600" height="400">
             </a>
+            <div class="money">
+              <h2><b>$399</b></h2>
+            </div>
+            <div class="i1">
+              <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
             <div class="desc">
                 <h3>WOODEN CHAIR</h3>
                <p> Add a description of the image here</p>
@@ -170,6 +261,12 @@
             <a target="_blank" href="../emoji/C.W350.H300/cc11.jpg">
               <img src="../emoji/C.W350.H300/cc11.jpg" alt="Chair_Design_3" width="600" height="400">
             </a>
+            <div class="money">
+              <h2><b>$399</b></h2>
+            </div>
+            <div class="i1">
+              <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
             <div class="desc">
                 <h3>WOODEN CHAIR</h3>
                <p> Add a description of the image here</p>
@@ -177,6 +274,6 @@
           </div>
         </div>
         <div class="clearfix"></div>
-    
+      </div>
 </body>
 </html>
